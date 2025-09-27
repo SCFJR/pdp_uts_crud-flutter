@@ -194,7 +194,7 @@ class _TodoHomePageState extends State<TodoHomePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Text("1. Muhammad Fajar Andima Maulana (2510631150059)", style: TextStyle(fontSize: 14)),
-              const Text("2. MUHAMMAD ATHARALTAMIS (2510631150097)", style: TextStyle(fontSize: 14)),
+              const Text("2. Muhammad Atharaltamis (2510631150097)", style: TextStyle(fontSize: 14)),
               const Text("3. Fajar Masari Hariyanto (2510631150089)", style: TextStyle(fontSize: 14)),
               const Text("4. Satria Agung Pratama (2510631150104)", style: TextStyle(fontSize: 14)),
               const Text("5. Kurnia Adi Ramadhan (2510631150093)", style: TextStyle(fontSize: 14)),
@@ -256,7 +256,7 @@ class _TodoHomePageState extends State<TodoHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("To-Do List", style: TextStyle(color: Colors.black87, fontWeight: FontWeight.bold)),
+        title: const Text("To-Do List App Kelompok 4", style: TextStyle(color: Colors.black87, fontWeight: FontWeight.bold)),
         centerTitle: true, // Center the title to ensure it's clearly visible
         backgroundColor: Colors.white,
         foregroundColor: Colors.black87,
