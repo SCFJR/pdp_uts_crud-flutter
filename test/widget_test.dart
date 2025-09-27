@@ -11,20 +11,17 @@
   import 'package:crud_project/main.dart';
 
   void main() {
-    testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+    testWidgets('Todo App loads correctly', (WidgetTester tester) async {
       // Build our app and trigger a frame.
       await tester.pumpWidget(const TodoApp());
 
-      // Verify that our counter starts at 0.
-      expect(find.text('0'), findsOneWidget);
-      expect(find.text('1'), findsNothing);
+      // Verify that the app title is displayed.
+      expect(find.text('To-Do List'), findsOneWidget);
 
-      // Tap the '+' icon and trigger a frame.
-      await tester.tap(find.byIcon(Icons.add));
-      await tester.pump();
+      // Verify that the initial message is displayed when no tasks exist.
+      expect(find.text('Belum ada tugas'), findsOneWidget);
 
-      // Verify that our counter has incremented.
-      expect(find.text('0'), findsNothing);
-      expect(find.text('1'), findsOneWidget);
+      // Verify that the floating action button exists.
+      expect(find.byType(FloatingActionButton), findsOneWidget);
     });
   }
