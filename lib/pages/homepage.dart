@@ -256,7 +256,7 @@ class _TodoHomePageState extends State<TodoHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("To-Do List App Kelompok 4", style: TextStyle(color: Colors.black87, fontWeight: FontWeight.bold)),
+        title: const Text("To-Do List App", style: TextStyle(color: Colors.black87, fontWeight: FontWeight.bold)),
         centerTitle: true, // Center the title to ensure it's clearly visible
         backgroundColor: Colors.white,
         foregroundColor: Colors.black87,
